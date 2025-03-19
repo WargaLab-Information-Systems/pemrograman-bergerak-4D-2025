@@ -1,9 +1,9 @@
 dynamic studentInfo() {
   // TODO 1
 
-  var name;
-  var favNumber;
-  var isPraktikan;
+  var name = "mei friska";
+  var favNumber = 10 ;
+  var isPraktikan = true ;
 
   // End of TODO 1
   return [name, favNumber, isPraktikan];
@@ -12,12 +12,12 @@ dynamic studentInfo() {
 dynamic circleArea(num r) {
   if (r < 0) {
     return 0.0;
-  } else {
+  } else  {
     const double pi = 3.1415926535897932; //π sama dengan library dart.math;
 
     // TODO 2
 
-    return 0;
+    return pi * r *r;
 
     // End of TODO 2
   }
@@ -25,8 +25,16 @@ dynamic circleArea(num r) {
 
 int? parseAndAddOne(String? input) {
   // TODO 3
+  if (input == null){
+    return null;
+  }
+  try {
+    return int.parse(input)+1;
+  } catch (e){
+    throw Exception ("input harus berupa angka");
+  }
 
-  return 0;
+
 
   // End of TODO 3
 }
