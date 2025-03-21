@@ -3,7 +3,8 @@ import 'exam1.dart';
 void main(List<String> args) {
   if (args.isEmpty) {
     print(
-        'Argumen tidak ada, jalankan ulang file exam1_main.dart dengan argumen.');
+      'Argumen tidak ada, jalankan ulang file exam1_main.dart dengan argumen.',
+    );
   } else {
     var studentName = args.join(' ');
     if (studentInfo()[0].runtimeType == String &&
